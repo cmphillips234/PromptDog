@@ -13,33 +13,37 @@ import core.NetworkCore;
 public class WinNetwork implements NetworkCore {
 
     @Override
+    public String getDnsSuffix() {
+        return "ovh.oakland.edu";
+    }
+    
+    @Override
     public String getDnsIP() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return "";
     }
 
     @Override
     public String getIP() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return "141.210.237.178";
     }
 
     @Override
     public String getSubnetMask() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return "255.255.254.0";
     }
 
     @Override
     public String getDefGateway() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return "141.210.236.1";
     }
 
     @Override
     public String getMAC() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return "28-D2-44-4F-D4-12";
     }
 
     @Override
     public String pingGoogleTime() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return "";
     }
-
 }

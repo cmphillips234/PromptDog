@@ -9,6 +9,7 @@ package core;
 
 public interface NetworkCore {
     public String getDnsIP();
+    public String getDnsSuffix();
     public String getIP();
     public String getSubnetMask();
     public String getDefGateway();
