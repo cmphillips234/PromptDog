@@ -29,22 +29,22 @@ public class WinHardware implements HardwareCore {
 
     @Override
     public String getSysType() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return "x64-based PC";
     }
 
     @Override
     public String getBiosVersion() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return "LENOVO 74CN47WW(V3.08), 1/30/2015";
     }
 
     @Override
     public String getTotalPhysicalMem() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return "8,108 MB";
     }
 
     @Override
     public String getTotalAvailableMem() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return "4,177 MB";
     }
 
 }

@@ -7,8 +7,8 @@ package test.win;
 
 
 public class NanoTestTimer {
-    long start;
-    long stop;
+    private long start;
+    private long stop;
     
     {
         start = -1;

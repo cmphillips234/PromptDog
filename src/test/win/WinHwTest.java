@@ -7,8 +7,6 @@ package test.win;
 
 import java.util.Map;
 import java.util.HashMap;
-import java.util.List;
-import java.util.LinkedList;
 import java.io.BufferedReader;
 import java.lang.Exception;
 import java.io.FileReader;
@@ -75,6 +73,18 @@ public class WinHwTest {
         }
     }
     
+    
+    private void printTestHeader(String key, String status) {
+        System.out.println(key.toUpperCase() + " TEST: " + status);
+    }
+    
+    private void printTestStats(String exp, String rec, long elapsed) {
+        System.out.println("Expected: " + exp);
+        System.out.println("Received: " + rec);
+        System.out.println("Elapsed time: " + String.valueOf(elapsed) + " ns");
+        System.out.print("\n");
+    }
+    
     private String testStatus(String expected, String received) {
         if (expected.equalsIgnoreCase(received)) {
             return "PASSED";
@@ -88,6 +98,7 @@ public class WinHwTest {
      */
     private void runTests() {
         NanoTestTimer timer = new NanoTestTimer();
+        NanoTestTimer totalTimer = new NanoTestTimer();
         String currTestKey;
         String expected;
         String received;
@@ -95,6 +106,7 @@ public class WinHwTest {
         long time;
         
         System.out.println("\n\nBEGINNING TESTS\n");
+        totalTimer.start();
         
         currTestKey = testKeys[0];  //host name
         expected = testMap.get(currTestKey).toString();
@@ -103,10 +115,8 @@ public class WinHwTest {
         received = wh.getHostName();
         time = timer.stop();
         status = testStatus(expected, received);
-        System.out.println(currTestKey.toUpperCase() + " TEST: " + status);
-        System.out.println("Expected: " + expected);
-        System.out.println("Received: " + received);
-        System.out.print("\n");
+        printTestHeader(currTestKey, status);
+        printTestStats(expected, received, time);
         
         currTestKey = testKeys[1];  //OS name
         expected = testMap.get(currTestKey).toString();
@@ -115,10 +125,8 @@ public class WinHwTest {
         received = wh.getOsName();   
         time = timer.stop();
         status = testStatus(expected, received);
-        System.out.println(currTestKey.toUpperCase() + " TEST: " + status);
-        System.out.println("Expected: " + expected);
-        System.out.println("Received: " + received);
-        System.out.print("\n");
+        printTestHeader(currTestKey, status);
+        printTestStats(expected, received, time);
         
         currTestKey = testKeys[2];  //OS version
         expected = testMap.get(currTestKey).toString();
@@ -127,10 +135,51 @@ public class WinHwTest {
         received = wh.getOsVersion();
         time = timer.stop();
         status = testStatus(expected, received);
-        System.out.println(currTestKey.toUpperCase() + " TEST: " + status);
-        System.out.println("Expected: " + expected);
-        System.out.println("Received: " + received);
-        System.out.print("\n");
+        printTestHeader(currTestKey, status);
+        printTestStats(expected, received, time);
+        
+        currTestKey = testKeys[3];  //System type
+        expected = testMap.get(currTestKey).toString();
+        received = ""; 
+        timer.start();
+        received = wh.getSysType();
+        time = timer.stop();
+        status = testStatus(expected, received);
+        printTestHeader(currTestKey, status);
+        printTestStats(expected, received, time);
+        
+        currTestKey = testKeys[4];  //BIOS version
+        expected = testMap.get(currTestKey).toString();
+        received = ""; 
+        timer.start();
+        received = wh.getBiosVersion();
+        time = timer.stop();
+        status = testStatus(expected, received);
+        printTestHeader(currTestKey, status);
+        printTestStats(expected, received, time);
+        
+        currTestKey = testKeys[5];  //Total physical memory
+        expected = testMap.get(currTestKey).toString();
+        received = ""; 
+        timer.start();
+        received = wh.getTotalPhysicalMem();
+        time = timer.stop();
+        status = testStatus(expected, received);
+        printTestHeader(currTestKey, status);
+        printTestStats(expected, received, time);
+        
+        currTestKey = testKeys[6];  //Total available memory
+        expected = testMap.get(currTestKey).toString();
+        received = ""; 
+        timer.start();
+        received = wh.getTotalAvailableMem();
+        time = timer.stop();
+        status = testStatus(expected, received);
+        printTestHeader(currTestKey, status);
+        printTestStats(expected, received, time);
+        
+        String allTestsTime = String.valueOf(totalTimer.stop());
+        System.out.println("\nAll tests completed in " + allTestsTime + " ns");
     }
     
     public static void main(String[] args) {
