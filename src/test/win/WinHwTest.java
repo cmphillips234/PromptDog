@@ -49,7 +49,7 @@ public class WinHwTest {
                     if (ln.substring(0, 2) != "//") {
                         int colonIndex = ln.indexOf(":");
                         if (colonIndex > 0) {
-                            String key = ln.substring(0, colonIndex).trim();
+                             String key = ln.substring(0, colonIndex).trim();
                             String value = ln.substring(colonIndex + 1).trim();
                             addIfKeyValid(key, value);
                         }
