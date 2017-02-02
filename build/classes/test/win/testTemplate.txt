@@ -1,0 +1,19 @@
+//enter data about your computer after colons
+//used when running tests
+//rename file to "test.txt" or change filename in test classes
+
+//found in "ipconfig /all" (windows)
+DnsSuffix:
+IP:
+SubnetMask:
+DefaultGateway:
+MAC:
+
+//found in "systeminfo" (windows)
+HostName:
+OsName: 
+OsVersion: 
+SysType: 
+BiosVersion: 
+TotalPhyMem:
+TotalAvailableMem:

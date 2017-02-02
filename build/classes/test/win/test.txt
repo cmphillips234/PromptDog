@@ -1,0 +1,17 @@
+//found in "ipconfig /all" (windows)
+DnsSuffix: ovh.oakland.edu
+DnsIP: 141.141.141.141
+IP: 141.210.237.178
+SubnetMask: 255.255.254.0
+DefaultGateway: 141.210.236.1
+MAC: 28-D2-44-4F-D4-12
+GooglePing: 20 ms
+
+//found in "systeminfo" (windows)
+HostName: Will-Lenovo
+OsName: Microsoft Windows 10 Home
+OsVersion: 10.0.14393 N/A Build 14393
+SysType: x64-based PC
+BiosVersion: LENOVO 74CN47WW(V3.08), 1/30/2015
+TotalPhyMem: 8,108 MB
+TotalAvailableMem: 4,177 MB
