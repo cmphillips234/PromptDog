@@ -4,14 +4,28 @@
  * @author William Barden
  * Jan 27, 2017
  */
-package core.win;
+package core;
 
 
 import core.NetworkCore;
 
 
-public class WinNetwork implements NetworkCore {
+public class Network implements NetworkCore {
 
+    String OSTYPE;
+    
+    public Network() {
+        String sysOs = System.getProperty("os.name").toLowerCase();
+        
+        if (sysOs.contains("windows")) {
+            OSTYPE = "cmd";
+        } 
+        else {
+            OSTYPE = "bash";
+        }
+        System.out.println("System shell: " + OSTYPE);
+    }
+    
     //ipconfig | find "Connection-specific DNS Suffix"
     @Override
     public String getDnsSuffix() {

@@ -2,12 +2,12 @@
  * @author William Barden
  * Jan 27, 2017
  */
-package gui.win;
+package gui;
 
 
-class PromptDog {
+class Gui {
 
-    PromptDog() {
+    Gui() {
 
     }
 }

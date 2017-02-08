@@ -2,7 +2,7 @@
  *
  * @author wfbar
  */
-package test.win;
+package test;
 
 
 

@@ -2,7 +2,7 @@
  * @author William Barden
  * Jan 27, 2017
  */
-package test.win;
+package test;
 
 
 import java.util.Map;
@@ -11,20 +11,20 @@ import java.io.BufferedReader;
 import java.lang.Exception;
 import java.io.FileReader;
 
-import core.win.WinHardware;
+import core.Hardware;
 
 
-public class WinHwTest {
+public class HardwareTest {
     private Map testMap;
-    private final String testFilePath = "src/test/win/test.txt";
+    private final String testFilePath = "src/test/test.txt";
     private final String[] testKeys = {"HostName", "OsName", "OsVersion",
             "SysType", "BiosVersion", "TotalPhyMem", "TotalAvailableMem"};
     
-    private WinHardware wh;
+    private Hardware hardwareCore;
     
-    private WinHwTest() {
+    private HardwareTest() {
         testMap = new HashMap<String, String>();
-        wh = new WinHardware();
+        hardwareCore = new Hardware();
         getTestInfo();
         showTestInfo();
         runTests();
@@ -112,7 +112,7 @@ public class WinHwTest {
         expected = testMap.get(currTestKey).toString();
         received = ""; 
         timer.start();
-        received = wh.getHostName();
+        received = hardwareCore.getHostName();
         time = timer.stop();
         status = testStatus(expected, received);
         printTestHeader(currTestKey, status);
@@ -122,7 +122,7 @@ public class WinHwTest {
         expected = testMap.get(currTestKey).toString();
         received = ""; 
         timer.start();
-        received = wh.getOsName();   
+        received = hardwareCore.getOsName();   
         time = timer.stop();
         status = testStatus(expected, received);
         printTestHeader(currTestKey, status);
@@ -132,7 +132,7 @@ public class WinHwTest {
         expected = testMap.get(currTestKey).toString();
         received = ""; 
         timer.start();
-        received = wh.getOsVersion();
+        received = hardwareCore.getOsVersion();
         time = timer.stop();
         status = testStatus(expected, received);
         printTestHeader(currTestKey, status);
@@ -142,7 +142,7 @@ public class WinHwTest {
         expected = testMap.get(currTestKey).toString();
         received = ""; 
         timer.start();
-        received = wh.getSysType();
+        received = hardwareCore.getSysType();
         time = timer.stop();
         status = testStatus(expected, received);
         printTestHeader(currTestKey, status);
@@ -152,7 +152,7 @@ public class WinHwTest {
         expected = testMap.get(currTestKey).toString();
         received = ""; 
         timer.start();
-        received = wh.getBiosVersion();
+        received = hardwareCore.getBiosVersion();
         time = timer.stop();
         status = testStatus(expected, received);
         printTestHeader(currTestKey, status);
@@ -162,7 +162,7 @@ public class WinHwTest {
         expected = testMap.get(currTestKey).toString();
         received = ""; 
         timer.start();
-        received = wh.getTotalPhysicalMem();
+        received = hardwareCore.getTotalPhysicalMem();
         time = timer.stop();
         status = testStatus(expected, received);
         printTestHeader(currTestKey, status);
@@ -172,7 +172,7 @@ public class WinHwTest {
         expected = testMap.get(currTestKey).toString();
         received = ""; 
         timer.start();
-        received = wh.getTotalAvailableMem();
+        received = hardwareCore.getTotalAvailableMem();
         time = timer.stop();
         status = testStatus(expected, received);
         printTestHeader(currTestKey, status);
@@ -183,6 +183,6 @@ public class WinHwTest {
     }
     
     public static void main(String[] args) {
-        new WinHwTest();
+        new HardwareTest();
     }
 }

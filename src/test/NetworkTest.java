@@ -2,28 +2,26 @@
  * @author William Barden
  * Jan 27, 2017
  */
-package test.win;
+package test;
 
-
-import core.win.WinHardware;
-import core.win.WinNetwork;
+import core.Network;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.HashMap;
 import java.util.Map;
 
 
-public class WinNetTest {
+public class NetworkTest {
     private Map testMap;
-    private final String testFilePath = "src/test/win/test.txt";
+    private final String testFilePath = "src/test/test.txt";
     private final String[] testKeys = {"DnsSuffix", "DnsIP", "IP", "SubnetMask",
             "DefaultGateway", "MAC", "GooglePing"};
     
-    private WinNetwork wn;
+    private Network netCore;
     
-    private WinNetTest() {
+    private NetworkTest() {
         testMap = new HashMap<String, String>();
-        wn = new WinNetwork();
+        netCore = new Network();
         getTestInfo();
         showTestInfo();
         runTests();
@@ -107,7 +105,7 @@ public class WinNetTest {
         expected = testMap.get(currTestKey).toString();
         received = ""; 
         timer.start();
-        received = wn.getDnsSuffix();
+        received = netCore.getDnsSuffix();
         time = timer.stop();
         status = testStatus(expected, received);
         printTestHeader(currTestKey, status);
@@ -117,7 +115,7 @@ public class WinNetTest {
         expected = testMap.get(currTestKey).toString();
         received = ""; 
         timer.start();
-        received = wn.getDnsIP();
+        received = netCore.getDnsIP();
         time = timer.stop();
         status = testStatus(expected, received);
         printTestHeader(currTestKey, status);
@@ -127,7 +125,7 @@ public class WinNetTest {
         expected = testMap.get(currTestKey).toString();
         received = ""; 
         timer.start();
-        received = wn.getIP();
+        received = netCore.getIP();
         time = timer.stop();
         status = testStatus(expected, received);
         printTestHeader(currTestKey, status);
@@ -137,7 +135,7 @@ public class WinNetTest {
         expected = testMap.get(currTestKey).toString();
         received = ""; 
         timer.start();
-        received = wn.getSubnetMask();
+        received = netCore.getSubnetMask();
         time = timer.stop();
         status = testStatus(expected, received);
         printTestHeader(currTestKey, status);
@@ -147,7 +145,7 @@ public class WinNetTest {
         expected = testMap.get(currTestKey).toString();
         received = ""; 
         timer.start();
-        received = wn.getDefGateway();
+        received = netCore.getDefGateway();
         time = timer.stop();
         status = testStatus(expected, received);
         printTestHeader(currTestKey, status);
@@ -157,7 +155,7 @@ public class WinNetTest {
         expected = testMap.get(currTestKey).toString();
         received = ""; 
         timer.start();
-        received = wn.getMAC();
+        received = netCore.getMAC();
         time = timer.stop();
         status = testStatus(expected, received);
         printTestHeader(currTestKey, status);
@@ -167,7 +165,7 @@ public class WinNetTest {
         expected = testMap.get(currTestKey).toString();
         received = ""; 
         timer.start();
-        received = wn.pingGoogleTime();
+        received = netCore.pingGoogleTime();
         time = timer.stop();
         status = testStatus(expected, received);
         printTestHeader(currTestKey, status);
@@ -178,6 +176,6 @@ public class WinNetTest {
     }
     
     public static void main(String[] args) {
-        new WinNetTest();
+        new NetworkTest();
     }
 }

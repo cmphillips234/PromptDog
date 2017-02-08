@@ -4,14 +4,32 @@
  * @author William Barden
  * Jan 27, 2017
  */
-package core.win;
+package core;
 
 
 import core.HardwareCore;
 
 
-public class WinHardware implements HardwareCore {
+public class Hardware implements HardwareCore {
 
+    String OSTYPE;
+    
+    public Hardware() {
+        String sysOs = System.getProperty("os.name").toLowerCase();
+        
+        if (sysOs.contains("windows")) {
+            OSTYPE = "cmd";
+        } 
+        else {
+            OSTYPE = "bash";
+        }
+        System.out.println("System shell: " + OSTYPE);
+    }
+    
+    public static void main(String[] args) {
+        new Hardware();
+    }
+    
     //systeminfo | find "Host Name"
     @Override
     public String getHostName() {
