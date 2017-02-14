@@ -1,0 +1,13 @@
+.custom-button {
+    -fx-font-family: "consolas";
+    -fx-font-size: 36;
+    -fx-font-weight: bold;
+}
+
+.hbox {
+    -fx-padding: 10 0 10 0;
+}
+
+.border-pane {
+    
+}

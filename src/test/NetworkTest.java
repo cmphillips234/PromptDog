@@ -13,7 +13,7 @@ import java.util.Map;
 
 public class NetworkTest {
     private Map testMap;
-    private final String testFilePath = "/Users/Will/Documents/School/CSE280/PromptDog/src/test/test.txt";
+    private final String testFilePath = "src/test/test.txt";
     private final String[] testKeys = {"DnsSuffix", "DnsIP", "IP", "SubnetMask",
             "DefaultGateway", "MAC", "GooglePing"};
     
