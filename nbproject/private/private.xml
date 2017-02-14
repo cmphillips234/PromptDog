@@ -3,12 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/wfbar/iCloudDrive/Documents/School/CSE280/PromptDog/src/test/win/NanoTestTimer.java</file>
-            <file>file:/C:/Users/wfbar/iCloudDrive/Documents/School/CSE280/PromptDog/src/core/win/WinNetwork.java</file>
-            <file>file:/C:/Users/wfbar/iCloudDrive/Documents/School/CSE280/PromptDog/src/core/win/WinCore.java</file>
-            <file>file:/C:/Users/wfbar/iCloudDrive/Documents/School/CSE280/PromptDog/src/test/win/WinNetTest.java</file>
-            <file>file:/C:/Users/wfbar/iCloudDrive/Documents/School/CSE280/PromptDog/src/test/win/WinCoreTest.java</file>
-            <file>file:/C:/Users/wfbar/iCloudDrive/Documents/School/CSE280/PromptDog/src/test/win/WinHwTest.java</file>
+            <file>file:/Users/Will/Documents/School/CSE280/PromptDog/src/test/HardwareTest.java</file>
+            <file>file:/Users/Will/Documents/School/CSE280/PromptDog/src/test/NetworkTest.java</file>
+            <file>file:/Users/Will/Documents/School/CSE280/PromptDog/src/core/Network.java</file>
+            <file>file:/Users/Will/Documents/School/CSE280/PromptDog/src/core/PdProcess.java</file>
+            <file>file:/Users/Will/Documents/School/CSE280/PromptDog/src/core/Hardware.java</file>
         </group>
     </open-files>
 </project-private>

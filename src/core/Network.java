@@ -23,7 +23,7 @@ public class Network implements NetworkCore {
         else {
             OSTYPE = "bash";
         }
-        System.out.println("System shell: " + OSTYPE);
+        System.out.println("System shell: " + OSTYPE); 
     }
     
     //ipconfig | find "Connection-specific DNS Suffix"

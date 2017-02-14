@@ -5,9 +5,15 @@
 package gui;
 
 
-class PromptDog {
+public class PromptDog {
 
-    PromptDog() {
+    Gui ui;
 
+    PromptDog(String[] args) {
+        ui = new Gui(args);
+    }
+
+    public static void main(String[] args) {
+        new PromptDog(args);
     }
 }

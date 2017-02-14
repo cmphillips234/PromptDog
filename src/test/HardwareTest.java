@@ -16,7 +16,7 @@ import core.Hardware;
 
 public class HardwareTest {
     private Map testMap;
-    private final String testFilePath = "src/test/test.txt";
+    private final String testFilePath = "/Users/Will/Documents/School/CSE280/PromptDog/src/test/test.txt";
     private final String[] testKeys = {"HostName", "OsName", "OsVersion",
             "SysType", "BiosVersion", "TotalPhyMem", "TotalAvailableMem"};
     

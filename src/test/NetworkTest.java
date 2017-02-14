@@ -13,15 +13,15 @@ import java.util.Map;
 
 public class NetworkTest {
     private Map testMap;
-    private final String testFilePath = "src/test/test.txt";
+    private final String testFilePath = "/Users/Will/Documents/School/CSE280/PromptDog/src/test/test.txt";
     private final String[] testKeys = {"DnsSuffix", "DnsIP", "IP", "SubnetMask",
             "DefaultGateway", "MAC", "GooglePing"};
     
-    private Network netCore;
+    private Network net;
     
     private NetworkTest() {
         testMap = new HashMap<String, String>();
-        netCore = new Network();
+        net = new Network();
         getTestInfo();
         showTestInfo();
         runTests();
@@ -105,7 +105,7 @@ public class NetworkTest {
         expected = testMap.get(currTestKey).toString();
         received = ""; 
         timer.start();
-        received = netCore.getDnsSuffix();
+        received = net.getDnsSuffix();
         time = timer.stop();
         status = testStatus(expected, received);
         printTestHeader(currTestKey, status);
@@ -115,7 +115,7 @@ public class NetworkTest {
         expected = testMap.get(currTestKey).toString();
         received = ""; 
         timer.start();
-        received = netCore.getDnsIP();
+        received = net.getDnsIP();
         time = timer.stop();
         status = testStatus(expected, received);
         printTestHeader(currTestKey, status);
@@ -125,7 +125,7 @@ public class NetworkTest {
         expected = testMap.get(currTestKey).toString();
         received = ""; 
         timer.start();
-        received = netCore.getIP();
+        received = net.getIP();
         time = timer.stop();
         status = testStatus(expected, received);
         printTestHeader(currTestKey, status);
@@ -135,7 +135,7 @@ public class NetworkTest {
         expected = testMap.get(currTestKey).toString();
         received = ""; 
         timer.start();
-        received = netCore.getSubnetMask();
+        received = net.getSubnetMask();
         time = timer.stop();
         status = testStatus(expected, received);
         printTestHeader(currTestKey, status);
@@ -145,7 +145,7 @@ public class NetworkTest {
         expected = testMap.get(currTestKey).toString();
         received = ""; 
         timer.start();
-        received = netCore.getDefGateway();
+        received = net.getDefGateway();
         time = timer.stop();
         status = testStatus(expected, received);
         printTestHeader(currTestKey, status);
@@ -155,7 +155,7 @@ public class NetworkTest {
         expected = testMap.get(currTestKey).toString();
         received = ""; 
         timer.start();
-        received = netCore.getMAC();
+        received = net.getMAC();
         time = timer.stop();
         status = testStatus(expected, received);
         printTestHeader(currTestKey, status);
@@ -165,7 +165,7 @@ public class NetworkTest {
         expected = testMap.get(currTestKey).toString();
         received = ""; 
         timer.start();
-        received = netCore.pingGoogleTime();
+        received = net.pingGoogleTime();
         time = timer.stop();
         status = testStatus(expected, received);
         printTestHeader(currTestKey, status);
