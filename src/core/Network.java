@@ -35,7 +35,7 @@ public class Network implements NetworkCore {
     //ipconfig /all | find "DNS Servers"
     @Override
     public String getDnsIP() {
-        return "";
+        return "123.345.789.321";
     }
 
     //ipconfig /all | find "IPv4 Address"
@@ -67,6 +67,6 @@ public class Network implements NetworkCore {
     //ping -n 1 www.google.com
     @Override
     public String pingGoogleTime() {
-        return "";
+        return "12 ms";
     }
 }
