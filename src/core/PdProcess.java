@@ -8,31 +8,47 @@ import java.util.Scanner;
 public class PdProcess {
 
     PdProcess() {
-        try {
-            File tf = new File("temp.txt");
-            ProcessBuilder pb = new ProcessBuilder("bash", "-c", "sw_vers -productName");
-            pb.redirectOutput(tf);
-            Process p = pb.start();
+        
+    }
+   
+    public void GoldenRetriever(String tempName, String shellName, String driveName, String command){
+        
+        
+        try{
             
-            try {
-                p.waitFor();
-            } catch (InterruptedException exc) {
-                exc.printStackTrace();
+            File tf = new File(tempName + ".txt");
+            
+            if (!tf.exists()) {
+                tf = new File(tempName + ".txt");
             }
             
+            ProcessBuilder pb = new ProcessBuilder(shellName,driveName,command);
+            pb.redirectOutput(tf);
+            Process p = pb.start();
+           
+            
+            
+            try {
+               p.waitFor();
+            } catch (InterruptedException ex) {
+                Logger.getLogger(PromptDogTests_ProcessBuilding.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            
+            
+            
             Scanner output = new Scanner(tf);
-            while (output.hasNextLine()) {
+            while (output.hasNextLine()){
                 System.out.println(output.nextLine());
             }
             
-            output.close();
-            tf.delete();
-        } catch (IOException exc) {
-            exc.printStackTrace();
+           // System.out.println(System.getProperty("os.name"));
+            
+        
+        
+        }catch (IOException e){
+        
+            e.printStackTrace();
         }
-    }
-
-    public static void main(String[] args) {
-        new PdProcess();
+  
     }
 }
