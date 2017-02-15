@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jTabbedPane1" min="-2" pref="753" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jTabbedPane1" alignment="1" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JTabbedPane" name="jTabbedPane1">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="" noResource="true"/>
+      </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value=""/>
+      </AccessibilityProperties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="groupPanel">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="PromptDog">
+                <Property name="tabTitle" type="java.lang.String" value="PromptDog"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="159" max="32767" attributes="0"/>
+                      <Component id="jScrollPane1" min="-2" pref="272" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="103" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
+                              <Component id="jScrollPane1" min="-2" pref="166" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="162" max="-2" attributes="0"/>
+                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="107" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="jTextArea1">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Lucida Grande" size="13" style="1"/>
+                    </Property>
+                    <Property name="rows" type="int" value="5"/>
+                    <Property name="text" type="java.lang.String" value="PromptDog&#xa;&#xa;William Barden - Team Leader&#xa;Tanner Porteous&#xa;Caleb Phillips&#xa;Nicholas Klein&#xa;Nicholas Norman&#xa;&#xa;CIT 280"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JLabel" name="jLabel1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="PromptDog Logo"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="hardwarePanel">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Hardware">
+                <Property name="tabTitle" type="java.lang.String" value="Hardware"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="osLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="systemTypeLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="biosLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="memoryLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="processorsLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="processorValue" min="-2" max="-2" attributes="0"/>
+                                  <Component id="macValue1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="biosValue" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="systemTypeValue" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="osValue" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="462" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="hardwareButton" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="hardwareProgress" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="osLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="osValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="systemTypeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="systemTypeValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="biosLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="biosValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="memoryLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="macValue1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="processorsLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="processorValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="231" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="hardwareProgress" max="32767" attributes="0"/>
+                          <Component id="hardwareButton" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JProgressBar" name="hardwareProgress">
+            </Component>
+            <Component class="javax.swing.JLabel" name="osLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="OS Version:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="osValue">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&quot;os value&quot;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="systemTypeLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="System Type:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="systemTypeValue">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&quot;system type value&quot;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="biosLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="BIOS Version:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="biosValue">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&quot;bios value&quot;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="memoryLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Total Memory:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="macValue1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&quot;memory value&quot;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="processorsLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Processors:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="processorValue">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&quot;processor value&quot;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="hardwareButton">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Run"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="networkInternalPanel">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Networking Internal">
+                <Property name="tabTitle" type="java.lang.String" value="Networking Internal"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="dnsLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="subnetLabek" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="subnetValue" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="dnsValue" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="hostNameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="privateIPLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="publicIPLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="macLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="macValue" min="-2" max="-2" attributes="0"/>
+                                  <Component id="publicIPValue" min="-2" max="-2" attributes="0"/>
+                                  <Component id="privateIPValue" min="-2" max="-2" attributes="0"/>
+                                  <Component id="hostNameValue" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="451" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="networkButton" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="networkProgress" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="hostNameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="hostNameValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="privateIPLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="privateIPValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="publicIPLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="publicIPValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="macLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="macValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="dnsLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="dnsValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="subnetLabek" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="subnetValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="195" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="networkProgress" max="32767" attributes="0"/>
+                          <Component id="networkButton" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JProgressBar" name="networkProgress">
+            </Component>
+            <Component class="javax.swing.JLabel" name="hostNameLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Host Name:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="hostNameValue">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&quot;host name value&quot;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="privateIPLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Private IP:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="privateIPValue">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&quot;private ip value&quot;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="publicIPLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Public IP:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="publicIPValue">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&quot;public ip value&quot;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="macLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="MAC Address:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="macValue">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&quot;mac address value&quot;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="subnetLabek">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Subnet Mask:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="dnsLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="DNS:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="dnsValue">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&quot;dns value&quot;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="subnetValue">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&quot;subnet value&quot;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="networkButton">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Run"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="networkExternalPanel">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Networking External">
+                <Property name="tabTitle" type="java.lang.String" value="Networking External"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="privateIPLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="netstatLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="wifiLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="wifiValue" min="-2" max="-2" attributes="0"/>
+                                  <Component id="netstatValue" min="-2" max="-2" attributes="0"/>
+                                  <Component id="pingValue" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="0" pref="464" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="networkButton1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="networkProgress1" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="privateIPLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="pingValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="netstatLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="netstatValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="wifiLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="wifiValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="243" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="networkProgress1" alignment="0" max="32767" attributes="0"/>
+                          <Component id="networkButton1" alignment="0" min="-2" pref="20" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="privateIPLabel4">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Google Ping:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="pingValue">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&quot;google ping value&quot;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="netstatLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Netstat:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="netstatValue">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&quot;netstat value&quot;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="wifiLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Wifi Type:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="wifiValue">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&quot;wifi type value&quot;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="networkButton1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Run"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JProgressBar" name="networkProgress1">
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
