@@ -101,7 +101,7 @@ public class PromptDog extends Application {
         // settup stage
         primaryStage.setTitle("PromptDog");
         logo = new Image(this.getClass().getClassLoader()
-                    .getResource("logo.jpg").toString());
+                    .getResource("res/logo.jpg").toString());
         primaryStage.getIcons().add(logo);
         
         primaryStage.setScene(mainScene);
