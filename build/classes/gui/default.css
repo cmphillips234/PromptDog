@@ -6,6 +6,7 @@
     -fx-font-family: "consolas";
     -fx-font-size: 36;
     -fx-font-weight: bold;
+    -fx-padding: 5 0 5 0;
 }
 
 .hbox {
@@ -14,4 +15,8 @@
 
 .label {
     -fx-padding: 0 10 0 10;
+}
+
+.row-hbox {
+  
 }

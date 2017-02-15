@@ -4,28 +4,26 @@
  */
 package gui;
 
+
+import java.util.LinkedList;
+import java.util.List;
 import javafx.application.Application;
-import javafx.collections.ObservableList;
-import javafx.geometry.Bounds;
-import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
-import javafx.scene.text.Font;
 import javafx.stage.Stage;
+import javafx.scene.control.Label;
+import javafx.scene.control.Menu;
+import javafx.scene.control.MenuBar;
+import javafx.scene.image.Image;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.VBox;
 
 import core.Hardware;
 import core.Network;
-import java.util.LinkedList;
-import java.util.List;
-import javafx.event.EventHandler;
-import javafx.scene.control.Label;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.VBox;
+
 
 public class PromptDog extends Application {
     
@@ -37,7 +35,11 @@ public class PromptDog extends Application {
     private Button networkButton;
     private BorderPane borderPane;
     private HBox hbox;
+    private Image logo;
+    private Menu viewMenu;
+    private MenuBar menuBar;
     private Scene mainScene;
+    private Stage primaryStage;
     private VBox hardwareVbox;
     private VBox networkVbox;
     private List<Label[]> hardwareList;
@@ -48,23 +50,12 @@ public class PromptDog extends Application {
     
     @Override
     public void start(Stage primaryStage) throws Exception {
+        this.primaryStage = primaryStage;
+        
         hardware = new Hardware();
         network = new Network();
         
         createGui();
-        mainScene = new Scene(borderPane);
-        mainScene.getStylesheets().add(this.getClass().getResource("default.css"
-                    ).toExternalForm());
-        
-        // settup stage
-        primaryStage.setTitle("PromptDog");
-        primaryStage.setScene(mainScene);
-        primaryStage.show();
-        
-        // set minimum sizes of gui members
-        primaryStage.setMinWidth(primaryStage.getWidth());
-        primaryStage.setMinHeight(primaryStage.getHeight());
-        createNetworkDisplay();
     }
     
     private void createGui() {
@@ -72,10 +63,7 @@ public class PromptDog extends Application {
         // initialize buttons
         hardwareButton = new Button("Hardware");
         networkButton = new Button("Network");
-        // set padding of buttons
-        Insets padding = new Insets(5, 5, 5, 5);
-        hardwareButton.setPadding(padding);
-        networkButton.setPadding(padding);
+        // set style class
         hardwareButton.getStyleClass().add("custom-button");
         networkButton.getStyleClass().add("custom-button");
         // set minimum widths
@@ -96,7 +84,7 @@ public class PromptDog extends Application {
         hbox.setAlignment(Pos.CENTER);
         hbox.getStyleClass().add("hbox");
         
-        // initialize table
+        // initialize data and menu
         createHardwareDisplay();
         createNetworkDisplay();
         
@@ -105,9 +93,25 @@ public class PromptDog extends Application {
         borderPane.setTop(hbox);
         borderPane.setCenter(hardwareVbox);
         borderPane.getStyleClass().add("border-pane");
-    }
-    
-    private void createHardwareDisplay() {
+        
+        mainScene = new Scene(borderPane);
+        mainScene.getStylesheets().add(this.getClass().getResource("orange.css"
+                    ).toExternalForm());
+        
+        // settup stage
+        primaryStage.setTitle("PromptDog");
+        logo = new Image(this.getClass().getClassLoader()
+                    .getResource("logo.jpg").toString());
+        primaryStage.getIcons().add(logo);
+        
+        primaryStage.setScene(mainScene);
+        primaryStage.show();
+        
+        // set minimum sizes of gui members
+        primaryStage.setMinWidth(primaryStage.getWidth());
+        primaryStage.setMinHeight(primaryStage.getHeight());
+        createNetworkDisplay();
+    }private void createHardwareDisplay() {
         hardwareVbox = new VBox(5);
         hardwareList = new LinkedList<>();
         

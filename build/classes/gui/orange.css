@@ -1,0 +1,55 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 15, 2017, 12:12:44 AM
+    Author     : Will
+*/
+.border-pane {
+    /* critical */
+    -fx-padding: 0 10 10 10;
+    /* appearance */
+    -fx-background-color: rgb(28, 35, 41);
+}
+
+.custom-button {
+    /* critical */
+    -fx-font-family: "consolas";
+    -fx-font-size: 36;
+    -fx-font-weight: bold;
+    -fx-padding: 5 5 5 5;
+    /* appearance */
+    -fx-background-color: rgb(28, 35, 41);
+    -fx-text-fill: rgb(252, 147, 50);
+}
+.custom-button:hover {
+    -fx-background-color: rgb(28, 35, 41);
+    -fx-text-fill: rgb(160, 170, 170);
+}
+.custom-button:focused:hover {
+    -fx-background-color: rgb(252, 147, 50);
+    -fx-text-fill: rgb(28, 35, 41);
+}
+.custom-button:focused {
+    -fx-background-color: rgb(252, 147, 50);
+    -fx-text-fill: rgb(28, 35, 41);
+}
+
+.hbox {
+    /* critical */
+    -fx-padding: 10 0 10 0;
+    /* appearance */
+}
+
+.label {
+    /* critical */
+    -fx-padding: 0 10 0 10;
+    /* appearance */
+    -fx-text-fill: rgb(160, 170, 170);
+}
+
+.row-hbox {
+  
+}
