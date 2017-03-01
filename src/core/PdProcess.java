@@ -31,7 +31,7 @@ public class PdProcess {
             try {
                p.waitFor();
             } catch (InterruptedException ex) {
-                Logger.getLogger(PromptDogTests_ProcessBuilding.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PdProcess.class.getName()).log(Level.SEVERE, null, ex);
             }
             
             
